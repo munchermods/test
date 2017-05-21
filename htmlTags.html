@@ -1,0 +1,473 @@
+<!doctype html>
+<html>
+
+<head>
+<title>html tags</title>
+    <style>
+
+      table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+.blank {
+
+  height: 100px;
+  background-color: #ff0000;
+}
+
+/*FOR A LINKS ONLY - REMOVING THIS COMMENT WILL CAUSE OTHER LINKS TO BEHAVE ODD*/
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}*/
+
+    </style>
+</head>
+
+<body>
+
+
+
+<p><b>This text is bold</b></p>
+<p><i>This text is italic</i></p>
+<hr>
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+
+<p><b> - Bold text </b></p>
+<p><strong> - Important text </strong></p>
+<p><i> - Italic text </i></p>
+<p><em> - Emphasized text </em></p>
+<p><mark> - Marked text </mark></p>
+<p><small> - Small text </small></p>
+<p><del> - Deleted text </del></p>
+<p><ins> - Inserted text </ins></p>
+<p><sub> - Subscript text </sub></p>
+<p><sup> - Superscript text </sup></p>
+
+<!--Note: Browsers display <strong> as <b>, and <em> as <i>. However, there is a difference in the meaning of these tags: <b>
+     and <i> defines bold and italic text, but <strong> and <em> means that the text is "important".-->
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+<!--<abbr>	Defines an abbreviation or acronym
+<address>	Defines contact information for the author/owner of a document
+<bdo>	Defines the text direction
+<blockquote>	Defines a section that is quoted from another source
+<cite>	Defines the title of a work
+<q>	Defines a short inline quotation-->
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<bdo dir="rtl">This line will be written from right to left</bdo>
+
+<!-- Could also have _top, _parent, _self, _blank -->
+<a href="https://www.w3schools.com/html/" target="_self">Visit our HTML tutorial!</a> 
+
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<!--Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the id attribute (id="value") to define bookmarks in a page
+Use the href attribute (href="#value") to link to the bookmark-->
+
+
+
+<!--Use the <map> tag to define an image-map. An image-map is an image with clickable areas.
+
+The name attribute of the <map> tag is associated with the <img>'s usemap attribute 
+
+and creates a relationship between the image and the map.
+
+The <map> tag contains a number of <area> tags, that defines the clickable areas in the image-map:-->
+
+
+<!--Use the HTML <img> element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes to define the size of the image
+Use the CSS width and height properties to define the size of the image (alternatively)
+Use the CSS float property to let the image float
+Use the HTML <map> element to define an image-map
+Use the HTML <area> element to define the clickable areas in the image-map
+Use the HTML <img>'s element usemap attribute to point to an image-map-->
+
+<p>Click on the sun or on one of the planets to watch it closer:</p>
+
+<img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map>
+
+<div class="blank">
+</div>
+
+<table>
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<div class="blank">
+</div>
+
+  <table style="width:100%">
+    <caption> Colspan </caption>
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+
+<div class="blank">
+</div>
+
+<table style="width:100%">
+  <caption> Rowspan </caption>
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+<div class="blank">
+</div>
+
+
+
+<!--<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table-->
+
+
+  <h2>An Unordered HTML List</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h2>An Ordered HTML List</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<!--Unordered HTML List - Choose List Item Marker
+The CSS list-style-type property is used to define the style of the list item marker:
+
+Value	Description
+disc	Sets the list item marker to a bullet (default)
+circle	Sets the list item marker to a circle
+square	Sets the list item marker to a square
+none	The list items will not be marked-->
+
+<!--Ordered HTML List - The Type Attribute
+The type attribute of the <ol> tag, defines the type of the list item marker:
+
+Type	Description
+type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers-->
+
+
+<!--HTML Description Lists
+HTML also supports description lists.
+
+A description list is a list of terms, with a description of each term.
+
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term: 
+
+Example-->
+<h2>A description list</h2>
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<!--Nested HTML Lists
+List can be nested (lists inside lists):-->
+
+<h2>A Nested List</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+    <li>Black tea</li>
+    <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<!--Use the HTML <ul> element to define an unordered list
+Use the CSS list-style-type property to define the list item marker
+Use the HTML <ol> element to define an ordered list
+Use the HTML type attribute to define the numbering type
+Use the HTML <li> element to define a list item
+Use the HTML <dl> element to define a description list
+Use the HTML <dt> element to define the description term
+Use the HTML <dd> element to describe the term in a description list
+Lists can be nested inside lists
+List items can contain other HTML elements
+Use the CSS property float:left or display:inline to display a list horizontally-->
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<!--             -->
+<div class="blank">
+  </div>
+
+<iframe height="300px" width="100%" src="demo_iframe.htm" name="iframe_a"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+<p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+<!--       -->
+
+<div class="blank">
+  </div>
+
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<div class="blank">
+  </div>
+
+<script>
+function myFunction() { 
+    document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+}
+
+</script>
+
+<h1>My Second JavaScript</h1>
+
+<p>JavaScript can change the content of an HTML element:</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo2">This is a demonstration.</p>
+
+<div class="blank">
+  </div>
+
+<h1>My Third JavaScript</h1>
+
+<p id="demo3">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction2() {
+    document.getElementById("demo3").style.fontSize = "25px"; 
+    document.getElementById("demo3").style.color = "red";
+    document.getElementById("demo3").style.backgroundColor = "yellow";        
+}
+</script>
+
+<button type="button" onclick="myFunction2()">Click Me!</button>
+
+<div class="blank">
+  </div>
+
+<script>
+function light(sw) {
+    var pic;
+    if (sw == 0) {
+        pic = "pic_bulboff.gif"
+    } else {
+        pic = "pic_bulbon.gif"
+    }
+    document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<div class="blank">
+</div>
+
+<p id="demo4"></p>
+
+<script>
+document.getElementById("demo4").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+</body>
+</html>
